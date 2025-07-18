@@ -22,8 +22,8 @@ Postman – for API testing
 
 1.Clone the repository:
 
-git clone <your-repo-url>
-cd <project-folder>
+git clone https://github.com/ankitashelke007/Ankita_api_assignment.git
+cd Ankita_api_assignment
 
 2.Create and activate a virtual environment:
 
