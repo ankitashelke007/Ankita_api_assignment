@@ -148,4 +148,9 @@ You can use the included Postman collection named KPA_form data to:
 ├── requirements.txt
 ├── README.md
 └── postman_collection.json (optional)
+⚠️ Due to plartform limitations or environment constraints, the provided Flutter frontend (https://github.com/s2pl/KPA-ERP-FE/) was not run or integrated with the backend.
+
+However, the implemented APIs strictly follow the structure and data format specified in the SwaggerHub documentation and Postman collection. All endpoints have been thoroughly tested using Postman, and the responses are aligned with the expected frontend usage.
+
+The backend is fully ready to integrate with the frontend without requiring any changes.
 
