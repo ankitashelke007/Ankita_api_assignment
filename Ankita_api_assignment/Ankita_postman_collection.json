@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "78d01fc9-f2bb-48f6-9473-cd605d91326a",
+		"name": "KPA_form data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34214224"
+	},
+	"item": [
+		{
+			"name": "GET Wheel Spec Form",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/forms/wheel-specifications?formNumber=BCF002",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"forms",
+						"wheel-specifications"
+					],
+					"query": [
+						{
+							"key": "formNumber",
+							"value": "BCF002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Wheel Spec Form",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"formNumber\": \"BCF005\",\r\n  \"submittedBy\": \"Ankita\",\r\n  \"submittedDate\": \"2025-07-18\",\r\n  \"fields\": {\r\n    \"treadDiameterNew\": \"960mm\",\r\n    \"lastShopIssueSize\": \"950mm\",\r\n    \"condemningDia\": \"850mm\",\r\n    \"wheelGauge\": \"1676mm\",\r\n    \"variationSameAxle\": \"2mm\",\r\n    \"variationSameBogie\": \"3mm\",\r\n    \"variationSameCoach\": \"5mm\",\r\n    \"wheelProfile\": \"OK\",\r\n    \"intermediateWWP\": \"920mm\",\r\n    \"bearingSeatDiameter\": \"100mm\",\r\n    \"rollerBearingOuterDia\": \"120mm\",\r\n    \"rollerBearingBoreDia\": \"90mm\",\r\n    \"rollerBearingWidth\": \"30mm\",\r\n    \"axleBoxHousingBoreDia\": \"110mm\",\r\n    \"wheelDiscWidth\": \"125mm\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/forms/wheel-specifications",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"forms",
+						"wheel-specifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Bogie Checksheet",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"formNumber\": \"BCF010\",\r\n  \"submittedBy\": \"Ankita\",\r\n  \"submittedDate\": \"2025-07-19\",\r\n  \"inspectionBy\": \"Supervisor A\",\r\n  \"inspectionDate\": \"2025-07-18\",\r\n  \"bogieDetails\": {\r\n    \"bogieType\": \"ICF\",\r\n    \"bogieNo\": \"B123\",\r\n    \"makerYearBuilt\": \"2020\",\r\n    \"incomingDivAndDate\": \"Pune Division, 2025-07-10\",\r\n    \"deficitComponents\": \"None\",\r\n    \"dateOfIOH\": \"2025-07-15\",\r\n    \"location\": \"Workshop A\"\r\n  },\r\n  \"bogieChecksheet\": {\r\n    \"bogieFrameCondition\": \"Good\",\r\n    \"brakeRigging\": \"Functional\",\r\n    \"sideBearings\": \"OK\",\r\n    \"wheelAssembly\": \"Aligned\",\r\n    \"springCondition\": \"Normal\",\r\n    \"bolster\": \"Checked\",\r\n    \"bolsterSuspensionBracket\": \"Secure\",\r\n    \"lowerSpringSeat\": \"OK\",\r\n    \"axleGuide\": \"Proper\"\r\n  },\r\n  \"bmbcChecksheet\": {\r\n    \"bmbrType\": \"Type A\",\r\n    \"bmbrCondition\": \"OK\",\r\n    \"bmbrSize\": \"Standard\",\r\n    \"bmbrStatus\": \"Fitted\",\r\n    \"bmbrLeakTest\": \"Passed\",\r\n    \"cylinderBody\": \"Clean\",\r\n    \"pistonTrunnion\": \"Intact\",\r\n    \"adjustingTube\": \"Aligned\",\r\n    \"plungerSpring\": \"Tensioned\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/forms/bogie-checksheet",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"forms",
+						"bogie-checksheet"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
