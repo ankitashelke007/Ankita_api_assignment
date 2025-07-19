@@ -1,3 +1,4 @@
+Backend API was tested independently via Postman.
 🚆 Wheel & Bogie Inspection API (FastAPI + PostgreSQL)
 This FastAPI project provides API endpoints to submit and retrieve wheel specifications and bogie inspection forms. It uses SQLAlchemy for ORM and stores complex form data as JSON in a PostgreSQL database.
 
